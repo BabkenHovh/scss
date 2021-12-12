@@ -113,7 +113,6 @@
     }
     .for{
         position: absolute;
-        z-index: 1;
         width: 260px;
         height: 300px;
         background-color: white;
@@ -121,16 +120,27 @@
         border-radius: 6px;      
         right: 0;
         display: none; 
-                  
+             
     }
-    li>img:hover  {    
+    .foto:hover  {    
         cursor: pointer;
         
+        
     }
-    li>img:hover + .for {
-        display:block ;
-       
+    
+    .for>li{
+        text-align: center;
+        padding-top: 40px;
+        font-size: 20px;
+        border-top:2px solid #6b6b6b;
+        
     }
-    li>img:hover + li{
-        display: block;
+    .for>li>i{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-between;
     }
+  .foto:hover + .for>li {
+      display: block;
+  }
